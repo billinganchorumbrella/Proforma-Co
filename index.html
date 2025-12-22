@@ -433,7 +433,7 @@
             doc.text("IFSC Code: " + BANK_DETAILS.ifsc, bankX, bankY);
 
             if (qrImg) {
-                doc.addImage(qrImg, "PNG", qrX, finalY + 25, 30, 30);
+                doc.addImage(qrImg, "PNG", qrX, finalY + 25, 30, 40);
                 doc.setFontSize(9);
                 doc.text("UPI: " + BANK_DETAILS.upiId, qrX + 15, finalY + 60, { align: "center" }); 
             }
@@ -458,3 +458,4 @@
     </script>
 </body>
 </html>
+
